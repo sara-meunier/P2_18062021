@@ -1,0 +1,90 @@
+/*----- valeurs par defaut pour éviter les soucis-----*/
+body{margin:0;
+    padding: 0;
+    box-sizing:border-box;
+    font-size: 16px;
+   
+}
+
+/* rappels
+.class{}
+#id{}
+*/
+
+#page{
+    width:1000px;
+    border: solid black 1px;
+    margin:auto;    
+    }
+
+/* En-tete*/
+
+header{
+    border: solid red;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo{
+width:100px;
+}
+#div_logo{
+    flex:1;
+    border:2px blueviolet dashed;
+}
+nav{
+    border: 2px dashed purple;
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+}
+#inscription {
+    border : 2px dashed purple;}
+
+/*-------premiere section : recherches -----*/
+
+
+/*-------deuxieme section : hebergements_marseille-----*/
+#hebergements_marseille{
+    display: flex;
+    justify-content: space-between;
+    flex:2;
+}
+#hebergements, #populaires{
+    border:solid 2px orangered;
+    }
+/*partie gauche : herbergements à marseille*/
+#hebergements {
+    flex:2;
+   }
+ #gallerie_hebergements{
+       display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+.apercu_hebergements{
+    border : solid 2px orange;
+    margin : 10px;
+}
+/*images de la gallerie*/
+#hebergements_marseille .apercu{
+    width : 150px;
+}
+/*partie droite : les plus populaires*/
+#populaires{
+    flex:1;
+}
+
+
+/*--------troisieme section : activites_marseille--------*/
+
+
+/*footer*/
+footer{
+    display:flex;
+    justify-content:space-between;
+    border:solid salmon;
+}
+
+footer div {border: 2px solid green;}
