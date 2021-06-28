@@ -12,7 +12,8 @@ body{margin:0;
 */
 
 #page{
-    width:1000px;
+    width:85%;
+    min-width:500px;
     border: solid black 1px;
     margin:auto;    
     }
@@ -24,6 +25,8 @@ header{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+   /* position:fixed;*/
+   /* width:100%;*/
 }
 #logo{
 width:100px;
@@ -55,30 +58,115 @@ nav{
     }
 /*partie gauche : herbergements à marseille*/
 #hebergements {
-    flex:2;
+    /*flex:2;*/
+    width:70%;
    }
+
+#populaires {
+    width:30%;
+}
  #gallerie_hebergements{
        display:flex;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-around;
     }
-.apercu_hebergements{
+.case_hebergements{
     border : solid 2px orange;
-    margin : 10px;
+    width:30%;
 }
 /*images de la gallerie*/
-#hebergements_marseille .apercu{
-    width : 150px;
-}
-/*partie droite : les plus populaires*/
-#populaires{
-    flex:1;
+#gallerie_hebergements .apercu{
+   /* width : 150px;*/
+    height:150px;
+    overflow : hidden;
 }
 
+
+/*partie droite : les plus populaires*/
+#populaires{
+    display:flex;
+    flex-direction: column;
+    /*flex:1;*/
+    width:300px;
+    align-items:center;
+
+}
+
+#gallerie_populaires{
+    display: flex;
+    flex-direction : column;
+ }
+
+.apercu_populaires{
+    border : solid 2px orange;
+    width:200px;
+    display: flex;
+    flex-direction: row;
+}
+
+/*images de la gallerie des plus populaires*/
+#populaires .apercu {
+     width : 50px;
+     height:150px;
+     /*object-fit:fill;*/
+     object-fit: fill;
+     overflow : hidden;
+}
+
+/*--------images de la deuxieme section--------*/
+#gallerie_hebergements img {  
+    height:90px;
+    width:100%;
+}
+
+.cover{
+    object-fit :cover;
+    object-position:center;
+}
 
 /*--------troisieme section : activites_marseille--------*/
 
+/*gallerie des activités*/
+
+#activites_marseille {
+    border: solid 3px orangered;
+    height: 600px;
+}
+#contenu_activites_marseille
+    {display : flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 500px;
+    border: solid 2px purple;
+    justify-content:space-between;
+    }
+
+/*aperçus*/
+#activites_marseille .apercu {
+     width : 150px;
+     height:150px;
+     object-fit: cover;
+     overflow : hidden;
+
+
+}
+/*.apercu_activites{
+    border : solid red;
+}*/
+.grand {
+  height: 500px;
+  border: solid green;
+} 
+
+.moyen {
+    height: 280px;
+    border:solid blue
+}
+.petit {
+    height:180px;
+    border:solid blueviolet;
+}
 
 /*footer*/
 footer{
@@ -87,4 +175,7 @@ footer{
     border:solid salmon;
 }
 
-footer div {border: 2px solid green;}
+footer div {
+border: 2px solid green;
+width:33%;
+}
