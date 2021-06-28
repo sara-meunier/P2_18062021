@@ -3,8 +3,9 @@ body{margin:0;
     padding: 0;
     box-sizing:border-box;
     font-size: 16px;
-   
+    font-family: 'Raleway', sans-serif;   
 }
+
 
 /* rappels
 .class{}
@@ -44,8 +45,41 @@ nav{
 #inscription {
     border : 2px dashed purple;}
 
+/*-------font awesome-----------*/
+.fas {color:#0065FC;
+/*border: solid red 2px;*/
+}
+.clair {color :#dbdbdb}
+
+
+
 /*-------premiere section : recherches -----*/
 
+#selection_filtres {
+    display:flex;
+   /* border:solid crimson;*/
+    
+}
+
+#selection{
+    display:flex;
+    /*border: solid blue;*/
+}
+
+.filtre{
+    display: flex;
+    margin: 0px 0px 0px 10px;
+}
+.icone{
+    object-position:center;
+    border:solid 1px rgb(24, 218, 252);
+    vertical-align: middle;
+    margin:auto;
+}
+.categorie{
+    border:solid 1px rgb(0, 250, 33);
+    margin: 0px 0px 0px 5px;
+}
 
 /*-------deuxieme section : hebergements_marseille-----*/
 #hebergements_marseille{
@@ -59,12 +93,9 @@ nav{
 /*partie gauche : herbergements à marseille*/
 #hebergements {
     /*flex:2;*/
-    width:70%;
+    width:68%;
    }
 
-#populaires {
-    width:30%;
-}
  #gallerie_hebergements{
        display:flex;
       flex-direction: row;
@@ -88,29 +119,31 @@ nav{
     display:flex;
     flex-direction: column;
     /*flex:1;*/
-    width:300px;
-    align-items:center;
-
+    width:28%;
+   /* align-items:center;*/
+    
 }
 
 #gallerie_populaires{
     display: flex;
     flex-direction : column;
+    justify-content: space-between;
+    align-items:center;
+
  }
 
-.apercu_populaires{
+.case_populaires{
     border : solid 2px orange;
-    width:200px;
+    width:90%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 /*images de la gallerie des plus populaires*/
 #populaires .apercu {
-     width : 50px;
+     width : 50%;
      height:150px;
-     /*object-fit:fill;*/
-     object-fit: fill;
      overflow : hidden;
 }
 
@@ -131,40 +164,49 @@ nav{
 
 #activites_marseille {
     border: solid 3px orangered;
-    height: 600px;
+    height: 500px;
 }
 #contenu_activites_marseille
     {display : flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 500px;
+    height: 400px;
     border: solid 2px purple;
     justify-content:space-between;
     }
 
+.case_activites{
+    width:24%;
+}
+
 /*aperçus*/
 #activites_marseille .apercu {
-     width : 150px;
-     height:150px;
+     width : 100%;
+     height:90%;
      object-fit: cover;
      overflow : hidden;
-
-
 }
 /*.apercu_activites{
     border : solid red;
 }*/
+
+#contenu_activites_marseille img {  
+    height:100%;
+    width:100%;
+    object-fit :cover;
+    object-position:center;
+}
 .grand {
-  height: 500px;
+  height: 450px;
   border: solid green;
 } 
 
 .moyen {
-    height: 280px;
+    height: 200px;
     border:solid blue
 }
 .petit {
-    height:180px;
+    height:120px;
     border:solid blueviolet;
 }
 
