@@ -31,11 +31,13 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <!--barre de recherche-->
-        <form method="post" action="traitement.php">
+        <div id="barre_recherche">
+           <div id="map"><i class="fas fa-map-marker-alt noir"></i></div> <form method="post" action="traitement.php">
             <p>
-                <label for="recherche_ville"><i class="fas fa-map-marker-alt noir"></i></label> <input type="search" name="ville" id="recherche_ville" value="Marseille,France" /> <input type="submit" value="rechercher"/>
+                <label for="recherche_ville"></label> <input class="input" type="search" name="ville" id="recherche_ville" value="Marseille,France" /> <input class="button" type="submit" value="Rechercher"/>
             </p>
          </form>
+         </div>
         <!--choix des filtres-->
         <div id="selection_filtres">
             <p><b>Filtres</b></p>
@@ -65,11 +67,11 @@
     <!--hebergement à Marseille-->
     <section id="hebergements_marseille">
         <!--colonne de gauche- hebergement à marseille-->
-        <div id="hebergements">
+        <div id="hebergements" class="arrondi">
             
             <h2>Hébergements à Marseille</h2>
             <div id="gallerie_hebergements">
-                <div class="case_hebergements">
+                <div class="case_hebergements arrondi shadow">
                     <div class ="apercu">
                     <img class="cover" src="images/hebergements/4_small/auberge_cannebiere.jpg"/>
                     </div>
@@ -78,7 +80,7 @@
                     <p>Nuit à partir de 25€</p>
                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
                 </div>
-                <div class="case_hebergements">
+                <div class="case_hebergements arrondi shadow">
                     <div class ="apercu">
                     <img class="cover" src="images/hebergements/4_small/hotel_port.jpg"/>
                     </div>
@@ -87,7 +89,7 @@
                     <p>Nuit à partir de 52€</p>
                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                 </div>
-                <div class="case_hebergements">
+                <div class="case_hebergements arrondi shadow">
                     <div class ="apercu">
                     <img class="cover" src="images/hebergements/4_small/hotel_mouettes.jpg"/>
                     </div>
@@ -95,7 +97,7 @@
                     <p>Nuit à partir de 76€</p>
                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
                 </div>
-                <div class="case_hebergements">
+                <div class="case_hebergements arrondi shadow">
                     <div class ="apercu">
                     <img class="cover" src="images/hebergements/4_small/hotel_mer.jpg"/>
                     </div>
@@ -104,7 +106,7 @@
                     <p>Nuit à partir de 46€</p>
                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i><i class="fas fa-star clair"></i></p>
                 </div>
-                <div class="case_hebergements">
+                <div class="case_hebergements arrondi shadow">
                     <div class ="apercu">
                     <img class="cover" src="images/hebergements/4_small/auberge_panier.jpg"/>
                     </div>
@@ -113,7 +115,7 @@
                     <p>Nuit à partir de 23€</p>
                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
                 </div>
-                <div class="case_hebergements">
+                <div class="case_hebergements arrondi shadow">
                     <div class ="apercu">
                     <img class="cover" src="images/hebergements/4_small/hotel_amina.jpg"/>
                     </div>
@@ -125,13 +127,13 @@
             <p>Afficher plus</p>
         </div>
         <!--colonne de droite - les plus populaires-->
-        <div id="populaires">
+        <div id="populaires" class="arrondi">
             <h2>Les plus populaires</h2>
             <div id="gallerie_populaires">
 
-                <div class ="case_populaires">
+                <div class ="case_populaires arrondi shadow">
                     <div class="apercu">
-                        <img src="images/hebergements/4_small/hotel_soleil_matin.jpg"/>
+                        <img class="cover" src="images/hebergements/4_small/hotel_soleil_matin.jpg"/>
                     </div>
                     <div class="description">
                     <h3>Hôtel Le soleil du matin</h3>
@@ -140,9 +142,9 @@
                     </div>
                 </div>
 
-                <div class ="case_populaires">
+                <div class ="case_populaires arrondi shadow">
                     <div class="apercu">
-                        <img src="images/hebergements/4_small/coeur_de_l_eau.jpg"/>
+                        <img class="cover" src="images/hebergements/4_small/coeur_de_l_eau.jpg"/>
                     </div>
                     <div class="description">
                     <h3>Au coeur de l'eau Chambres d'hôtes</h3>
@@ -151,9 +153,9 @@
                     </div>
                 </div>
 
-                <div class ="case_populaires">
+                <div class ="case_populaires arrondi shadow">
                     <div class="apercu">
-                        <img src="images/hebergements/4_small/hotel_bleu_et_blanc.jpg"/>
+                        <img class="cover" src="images/hebergements/4_small/hotel_bleu_et_blanc.jpg"/>
                     </div>
                     <div class="description">
                     <h3>Hôtel Tout bleu et Blanc</h3>
@@ -171,42 +173,42 @@
         <h2>Activités à Marseille</h2>
         <!-- flexbox des activité en colonnes-->
         <div id="contenu_activites_marseille">
-            <div class="case_activites grand">
+            <div class="case_activites grand arrondi">
                 <div class="apercu">
                     <img src="images/activites/4_small/vieux_port.jpg"/>
                 </div>
                 <h3>Vieux Port</h3>
             </div>
         
-            <div class="case_activites moyen">
+            <div class="case_activites moyen arrondi">
                 <div class="apercu">
                     <img src="images/activites/4_small/fort_pomegues.jpg"/>
                 </div>
                 <h3>Fort de Pomègues</h3>
             </div>
 
-            <div class="case_activites petit">
+            <div class="case_activites petit arrondi">
                 <div class="apercu">
                     <img src="images/activites/4_small/iles_friout.jpg"/>
                 </div>
                 <h3>Iles du Frioul</h3>
             </div>
 
-            <div class="case_activites grand">
+            <div class="case_activites grand arrondi">
                 <div class="apercu">
                     <img src="images/activites/4_small/parc_national_calanques.jpg"/>
                 </div>
                 <h3>Parc National des Calanques</h3>
             </div>
 
-            <div class="case_activites petit">
+            <div class="case_activites petit arrondi">
                 <div class="apercu">
                     <img src="images/activites/4_small/notre_dame_garde.jpg"/>
                 </div>
                 <h3>Notre-Dame-de-la-Garde</h3>
             </div>
 
-            <div class="case_activites moyen">
+            <div class="case_activites moyen arrondi">
                 <div class="apercu">
                     <img src="images/activites/4_small/parc_longchamp.jpg"/>
                 </div>
