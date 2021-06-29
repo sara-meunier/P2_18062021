@@ -31,7 +31,11 @@
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
         <!--barre de recherche-->
-        <form></form>
+        <form method="post" action="traitement.php">
+            <p>
+                <label for="recherche_ville"><i class="fas fa-map-marker-alt noir"></i></label> <input type="search" name="ville" id="recherche_ville" value="Marseille,France" /> <input type="submit" value="rechercher"/>
+            </p>
+         </form>
         <!--choix des filtres-->
         <div id="selection_filtres">
             <p><b>Filtres</b></p>
