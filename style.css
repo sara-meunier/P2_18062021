@@ -6,14 +6,14 @@ body{
     font-size: 16px;
     font-family: 'Raleway', sans-serif;   
 }
-#page{
-    width:85%;
-    min-width:500px;
-    /*border: solid black 1px;*/
+.container{
+    /*width:85%;
+    min-width:500px;*/
+    max-width:1200px;
     margin:auto;    
     }
 
-/* En-tete*/
+/*--------En-tete--------------------*/
 
 header{
     display:flex;
@@ -26,6 +26,7 @@ header{
 #div_logo{
     flex:1;
 }
+/*navigation*/
 nav{
     display: flex;
     flex-direction: row;
@@ -34,33 +35,29 @@ nav{
 nav p{
     padding:20px;
 }
-
-#inscription {
-    padding-top:20px;
-    padding-left:20px;}
-
 nav a {
     color:black;
     text-decoration: none;
 }
-
 nav a:hover {
     display : inline;
     color:#0065FC;
     padding-top:20px;
     border-top: solid 2px #0065FC;
 }
-
 nav a:checked {
     text-decoration:none;
 }
-
+/*partie inscription*/
+#inscription {
+    padding-top:20px;
+    padding-left:20px;
+}
 #inscription a {
     color:#0065FC;
     font-weight:bold;
     text-decoration: none;
 }
-
 #inscription a:hover {
     display : inline;
     color:#0065FC;
@@ -86,7 +83,10 @@ nav a:checked {
 }
 .shadow{
     box-shadow: 5px 10px 10px  #ccccce6b, -5px -10px 10px #ccccce6b;
-}
+    }
+.filtre_1{
+    filter: brightness(1.3)contrast(90%);
+    }
 
 /*-------premiere section : recherches -----*/
 
@@ -97,7 +97,6 @@ nav a:checked {
     height:50px;
     align-items:center;
 }
-
 #map{
     display:flex;
     height:40px;
@@ -107,7 +106,6 @@ nav a:checked {
     justify-content: center;
     align-items:center;
 }
-
 .label{
     display: inline-block;
     vertical-align:middle;
@@ -118,7 +116,6 @@ nav a:checked {
     border-radius : 15px 0px 0px 15px;
     margin:auto;
 }
-
 .input{
     border-right: none;
     border-top : solid 1px #f2f2f2;
@@ -130,7 +127,6 @@ nav a:checked {
     font-weight:bold;
     padding: 0px 0px 0px 10px;
 }
-
 .button{
     background-color:#0065FC;
     color: white;
@@ -141,7 +137,9 @@ nav a:checked {
     font-size:1em;
     border:none;
     margin:0px;
+    cursor:pointer;
 }
+/* selection des filtres*/
 
 #selection_filtres {
     display:flex;
@@ -165,8 +163,8 @@ nav a:checked {
     border-radius:50%;
     width:30px;
     height:30px;
-    outline: solid 2px #DEEBFF;
-}
+    box-shadow: 0 0 3px #DEEBFF;
+    }
 .categorie{
     margin: 0px 0px 0px 5px;
     padding:5px 15px 5px 15px;
@@ -176,11 +174,33 @@ nav a:checked {
     font-weight:bold;
 }
 
+.filtre:hover { color:#0065FC;
+    background-color: #DEEBFF}
+
+/*information*/
+
+#information{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#icone_info{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: white;
+    border-radius:50%;
+    width:20px;
+    height:20px;
+    border: solid 2px #e6e6e6;
+    margin-right:10px;
+}
 /*-------deuxieme section : hebergements_marseille-----*/
 #hebergements_marseille{
     display: flex;
     justify-content: space-between;
     flex:2;
+    margin-top:50px;
 }
 #hebergements, #populaires{
     background-color: #f2f2f2;
@@ -202,9 +222,12 @@ nav a:checked {
     background-color:white;
     width:28%;
     margin-bottom:20px;
-}
+   }
 #gallerie_hebergements .apercu{
    overflow : hidden;
+}
+.description{
+    padding:15px;
 }
 
 /*partie droite : les plus populaires*/
@@ -230,23 +253,17 @@ nav a:checked {
 }
 
 /*images de la gallerie des plus populaires*/
-/*#populaires .apercu {
-     width : 50%;
-     height:150px;
-     overflow : hidden;
-}*/
+
 
 /*--------images de la deuxieme section--------*/
 #gallerie_hebergements img {  
     height:90px;
     width:100%;
 }
-
 #gallerie_populaires img  {
     height:100%;
     width:90px;
 }
-
 .cover{
     object-fit :cover;
     object-position:center;
@@ -258,6 +275,7 @@ nav a:checked {
 
 #activites_marseille {
     height: 500px;
+    margin-top:50px;
 }
 #contenu_activites_marseille{
     display : flex;
@@ -265,6 +283,7 @@ nav a:checked {
     flex-wrap: wrap;
     height: 400px;
     justify-content:space-between;
+    gap:4%;
  }
 .case_activites{
     width:22%;
@@ -286,26 +305,28 @@ nav a:checked {
 .petit {
     height:150px;
 }
-
 .grand img{
     height:300px;
 }
 .moyen img {
     height:150px;
 }
-
 .petit img {
     height:100px;
 }
 /*footer*/
-footer{
-    display:flex;
-    justify-content:space-between;
+footer {
     background-color: #f2f2f2;
-    padding:30px;
+
 }
 
-footer div {
+footer .container{
+    display:flex;
+    justify-content:space-between;
+    
+    padding:30px;
+}
+footer .container div {
     width:33%;
 }
 footer ul{

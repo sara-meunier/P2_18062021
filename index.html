@@ -10,7 +10,7 @@
 
     <body>
      <!-- div pour encapsuler la page-->
-    <div id=page>
+    <div class="container">
    
     <!--header-->    
     <header>
@@ -34,7 +34,7 @@
         <div id="barre_recherche">
            <div id="map"><i class="fas fa-map-marker-alt noir"></i></div> <form method="post" action="traitement.php">
             <p>
-                <label for="recherche_ville"></label> <input class="input" type="search" name="ville" id="recherche_ville" value="Marseille,France" /> <input class="button" type="submit" value="Rechercher"/>
+                <label for="recherche_ville"></label> <input class="input" type="search" name="ville" id="recherche_ville" placeholder="Marseille,France" /> <input class="button" type="submit" value="Rechercher"/>
             </p>
          </form>
          </div>
@@ -60,68 +60,83 @@
                 </div>
             </div>
         </div>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        
+        <!-- informations-->
+        <div id="information">
+            <div id="icone_info"><i class="fas fa-info"></i></div><p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
     </section>
 
     <!--hebergement à Marseille-->
     <section id="hebergements_marseille">
         <!--colonne de gauche- hebergement à marseille-->
-        <div id="hebergements" class="arrondi">
-            
+        <div id="hebergements" class="arrondi">            
             <h2>Hébergements à Marseille</h2>
             <div id="gallerie_hebergements">
-                <div class="case_hebergements arrondi shadow">
-                    <div class ="apercu">
-                    <img class="cover" src="images/hebergements/4_small/auberge_cannebiere.jpg"/>
-                    </div>
 
-                    <h3>Auberge La cannebière</h3>
-                    <p>Nuit à partir de 25€</p>
-                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
-                </div>
                 <div class="case_hebergements arrondi shadow">
                     <div class ="apercu">
-                    <img class="cover" src="images/hebergements/4_small/hotel_port.jpg"/>
+                        <img class="cover" src="images/hebergements/4_small/auberge_cannebiere.jpg"/>
                     </div>
+                    <div class="description">
+                        <h3>Auberge La cannebière</h3>
+                        <p>Nuit à partir de 25€</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
+                    </div>
+                </div>
 
-                    <h3>Hôtel du port</h3>
-                    <p>Nuit à partir de 52€</p>
-                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-                </div>
                 <div class="case_hebergements arrondi shadow">
                     <div class ="apercu">
-                    <img class="cover" src="images/hebergements/4_small/hotel_mouettes.jpg"/>
+                        <img class="cover" src="images/hebergements/4_small/hotel_port.jpg"/>
                     </div>
-                    <h3>Hôtel Les mouettes</h3>
-                    <p>Nuit à partir de 76€</p>
-                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
+                    <div class="description">
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de 52€</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                    </div>
                 </div>
-                <div class="case_hebergements arrondi shadow">
-                    <div class ="apercu">
-                    <img class="cover" src="images/hebergements/4_small/hotel_mer.jpg"/>
-                    </div>
 
-                    <h3>Hôtel de la mer</h3>
-                    <p>Nuit à partir de 46€</p>
-                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i><i class="fas fa-star clair"></i></p>
-                </div>
                 <div class="case_hebergements arrondi shadow">
                     <div class ="apercu">
-                    <img class="cover" src="images/hebergements/4_small/auberge_panier.jpg"/>
+                        <img class="cover" src="images/hebergements/4_small/hotel_mouettes.jpg"/>
                     </div>
-
-                    <h3>Auberge Le Panier</h3>
-                    <p>Nuit à partir de 23€</p>
-                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
+                    <div class="description">
+                        <h3>Hôtel Les mouettes</h3>
+                        <p>Nuit à partir de 76€</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
+                    </div>
                 </div>
+
+                <div class="case_hebergements arrondi shadow">
+                    <div class ="apercu">
+                        <img class="cover" src="images/hebergements/4_small/hotel_mer.jpg"/>
+                    </div>
+                    <div class="description">
+                        <h3>Hôtel de la mer</h3>
+                        <p>Nuit à partir de 46€</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i><i class="fas fa-star clair"></i></p>
+                    </div>
+                </div>
+
+                <div class="case_hebergements arrondi shadow">
+                    <div class ="apercu">
+                        <img class="cover" src="images/hebergements/4_small/auberge_panier.jpg"/>
+                    </div>
+                    <div class="description">
+                        <h3>Auberge Le Panier</h3>
+                        <p>Nuit à partir de 23€</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
+                    </div>
+                </div>
+
                 <div class="case_hebergements arrondi shadow">
                     <div class ="apercu">
                     <img class="cover" src="images/hebergements/4_small/hotel_amina.jpg"/>
                     </div>
+                    <div class="description">
                     <h3>Hôtel chez Amina</h3>
                     <p>Nuit à partir de 96€</p>
                     <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                    </div>
                 </div>
             </div>
             <p>Afficher plus</p>
@@ -175,7 +190,7 @@
         <div id="contenu_activites_marseille">
             <div class="case_activites grand arrondi">
                 <div class="apercu">
-                    <img src="images/activites/4_small/vieux_port.jpg"/>
+                    <img class="filtre_1" src="images/activites/4_small/vieux_port.jpg"/>
                 </div>
                 <h3>Vieux Port</h3>
             </div>
@@ -196,7 +211,7 @@
 
             <div class="case_activites grand arrondi">
                 <div class="apercu">
-                    <img src="images/activites/4_small/parc_national_calanques.jpg"/>
+                    <img class="filtre_1" src="images/activites/4_small/parc_national_calanques.jpg"/>
                 </div>
                 <h3>Parc National des Calanques</h3>
             </div>
@@ -217,9 +232,10 @@
 
         </div>
         </section>
-
+</div>
     <!--footer-->
     <footer>
+        <div class="container">
     <!--A propos-->
     <div>
         <h3>A propos</h3>
@@ -245,9 +261,8 @@
             <li>Nous contacter</li>
         </ul>
     </div>
-
+</div>
     </footer>
 
-    </div>
-    </body>
+        </body>
 </html>
