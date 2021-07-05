@@ -1,17 +1,35 @@
 /*----- valeurs par defaut pour éviter les soucis-----*/
-body{
+
+* {
     margin:0;
     padding: 0;
     box-sizing:border-box;
+}
+body{
+    
+    box-sizing:border-box;
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;   
+    font-family: 'Raleway', sans-serif;
+    margin:0;
+    padding: 0;    
 }
 .container{
-    /*width:85%;
-    min-width:500px;*/
     max-width:1200px;
-    margin:auto;    
-    }
+    margin:auto;
+ }
+
+ /*----- titres et paragraphes ------*/
+ h2{
+     padding: 10px 0px 10px 0px;
+     font-size:1.4em;
+ }
+ h3{
+     font-size:1.1em;
+     padding:5px 0px 5px 0px;
+ }
+ p{
+    padding: 4px 0px 4px 0px;
+ }
 
 /*--------En-tete--------------------*/
 
@@ -19,6 +37,8 @@ header{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 #logo{
     width:100px;
@@ -143,6 +163,7 @@ nav a:checked {
 
 #selection_filtres {
     display:flex;
+    padding: 25px 0px 25px 0px;
   }
 #selection{
     display:flex;
@@ -161,9 +182,9 @@ nav a:checked {
     margin:auto;
     background-color: #DEEBFF;
     border-radius:50%;
-    width:30px;
-    height:30px;
-    box-shadow: 0 0 3px #DEEBFF;
+    width:39px;
+    height:39px;
+    box-shadow: 0 0 0 2px #DEEBFF;
     }
 .categorie{
     margin: 0px 0px 0px 5px;
@@ -175,7 +196,9 @@ nav a:checked {
 }
 
 .filtre:hover { color:#0065FC;
-    background-color: #DEEBFF}
+    background-color: #DEEBFF;
+    cursor:pointer;
+}
 
 /*information*/
 
@@ -209,7 +232,7 @@ nav a:checked {
     }
 /*partie gauche : herbergements à marseille*/
 #hebergements {
-    width:65%;
+    width:68%;
    }
  #gallerie_hebergements{
       display:flex;
@@ -220,7 +243,7 @@ nav a:checked {
 .case_hebergements{
     border : solid 5px white;
     background-color:white;
-    width:28%;
+    width:31%;
     margin-bottom:20px;
    }
 #gallerie_hebergements .apercu{
@@ -234,7 +257,7 @@ nav a:checked {
 #populaires{
     display:flex;
     flex-direction: column;
-    width:25%;
+    width:30%;
 }
 #gallerie_populaires{
     display: flex;
