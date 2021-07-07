@@ -15,16 +15,20 @@
     <!--header-->    
     <header>
             <!--logo-->
-            <div id=div_logo><p><img id="logo" src="images/logo/Reservia@3x.png"/></p></div>
+            <div id="div_logo">
+                <p><img id="logo" src="images/logo/Reservia@3x.png" alt="logo de Reservia"/></p>
+            </div>
             <!--menu-->
             <nav>
                 <p><a href="#herbegements_marseille">Hébergements</a></p>
                 <p><a href="#activites_marseille">Activités</a></p>
             </nav>
             <!--s'inscrire-->
-            <div id="inscription"><p><a href="">S'inscrire</a></p></div>
+            <div id="inscription">
+                <p><a href="">S'inscrire</a></p>
+            </div>
 
-        </header>
+    </header>
 
     <!-- section recherche-->
     <section id="recherche">
@@ -32,11 +36,14 @@
         <p>En plein centre ville ou en pleine nature</p>
         <!--barre de recherche-->
         <div id="barre_recherche">
-           <div id="map"><i class="fas fa-map-marker-alt noir"></i></div> <form method="post" action="traitement.php">
+           <div id="map">
+               <i class="fas fa-map-marker-alt noir"></i>
+            </div>
+            <form method="post" action="traitement.php">
             <p>
-                <label for="recherche_ville"></label> <input class="input" type="search" name="ville" id="recherche_ville" placeholder="Marseille,France" /> <input class="button" type="submit" value="Rechercher"/>
+                <label for="recherche_ville"></label> <input class="input" type="search" name="ville" id="recherche_ville" placeholder="Marseille, France" /> <input class="button" type="submit" value="Rechercher"/>
             </p>
-         </form>
+            </form>
          </div>
         <!--choix des filtres-->
         <div id="selection_filtres">
@@ -62,7 +69,8 @@
         </div>
         <!-- informations-->
         <div id="information">
-            <div id="icone_info"><i class="fas fa-info"></i></div><p>Plus de 500 logements sont disponibles dans cette ville</p>
+            <div id="icone_info"><i class="fas fa-info"></i></div>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
 
@@ -73,111 +81,99 @@
             <h2>Hébergements à Marseille</h2>
             <div id="gallerie_hebergements">
 
-                <div class="case_hebergements arrondi shadow">
-                    <div class ="apercu">
-                        <img class="cover" src="images/hebergements/4_small/auberge_cannebiere.jpg"/>
-                    </div>
+                <!--<div class="case_hebergements arrondi shadow">-->
+                <a href="" class="arrondi shadow case_hebergements">
+                    <img class="cover" src="images/hebergements/4_small/auberge_cannebiere.jpg" alt=""/>
                     <div class="description">
                         <h3>Auberge La cannebière</h3>
                         <p>Nuit à partir de 25€</p>
                         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
                     </div>
-                </div>
+                 </a>
+                <!--</div>-->
 
-                <div class="case_hebergements arrondi shadow">
-                    <div class ="apercu">
-                        <img class="cover" src="images/hebergements/4_small/hotel_port.jpg"/>
-                    </div>
+                <a href="" class="case_hebergements arrondi shadow">
+                    <img class="cover" src="images/hebergements/4_small/hotel_port.jpg"/>
                     <div class="description">
                         <h3>Hôtel du port</h3>
                         <p>Nuit à partir de 52€</p>
                         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </div>
-                </div>
+                </a>
 
-                <div class="case_hebergements arrondi shadow">
-                    <div class ="apercu">
-                        <img class="cover" src="images/hebergements/4_small/hotel_mouettes.jpg"/>
-                    </div>
+                <a href="" class="case_hebergements arrondi shadow">
+                    <img class="cover" src="images/hebergements/4_small/hotel_mouettes.jpg"/>
                     <div class="description">
                         <h3>Hôtel Les mouettes</h3>
                         <p>Nuit à partir de 76€</p>
                         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
                     </div>
-                </div>
+                </a>
 
-                <div class="case_hebergements arrondi shadow">
-                    <div class ="apercu">
-                        <img class="cover" src="images/hebergements/4_small/hotel_mer.jpg"/>
-                    </div>
+                <a href="" class="case_hebergements arrondi shadow">
+                    <img class="cover" src="images/hebergements/4_small/hotel_mer.jpg"/>
                     <div class="description">
                         <h3>Hôtel de la mer</h3>
                         <p>Nuit à partir de 46€</p>
                         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i><i class="fas fa-star clair"></i></p>
                     </div>
-                </div>
+                </a>
 
-                <div class="case_hebergements arrondi shadow">
-                    <div class ="apercu">
-                        <img class="cover" src="images/hebergements/4_small/auberge_panier.jpg"/>
-                    </div>
+                <a href="" class="case_hebergements arrondi shadow">
+                    <img class="cover" src="images/hebergements/4_small/auberge_panier.jpg"/>
                     <div class="description">
                         <h3>Auberge Le Panier</h3>
                         <p>Nuit à partir de 23€</p>
                         <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
                     </div>
-                </div>
+                </a>
 
-                <div class="case_hebergements arrondi shadow">
-                    <div class ="apercu">
+                <a href="" class="case_hebergements arrondi shadow">
                     <img class="cover" src="images/hebergements/4_small/hotel_amina.jpg"/>
-                    </div>
                     <div class="description">
-                    <h3>Hôtel chez Amina</h3>
-                    <p>Nuit à partir de 96€</p>
-                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <h3>Hôtel chez Amina</h3>
+                        <p>Nuit à partir de 96€</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </div>
-                </div>
+                </a>
             </div>
-            <p>Afficher plus</p>
+            <p><a href="">Afficher plus</a></p>
         </div>
+
         <!--colonne de droite - les plus populaires-->
         <div id="populaires" class="arrondi">
-            <h2>Les plus populaires</h2>
+            <div id="titre_populaire">
+                <h2>Les plus populaires</h2>
+                <i class="fas fa-chart-line noir"></i>
+            </div>
+
             <div id="gallerie_populaires">
-
-                <div class ="case_populaires arrondi shadow">
-                    <div class="apercu">
-                        <img class="cover" src="images/hebergements/4_small/hotel_soleil_matin.jpg"/>
-                    </div>
+               <a href="" class ="case_populaires arrondi shadow">
+                    <img class="cover" src="images/hebergements/4_small/hotel_soleil_matin.jpg"/>
                     <div class="description">
-                    <h3>Hôtel Le soleil du matin</h3>
-                    <p>Nuit à partir de 128€</p>
-                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <h3>Hôtel Le soleil du matin</h3>
+                        <p>Nuit à partir de 128€</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
                     </div>
-                </div>
+                </a>
 
-                <div class ="case_populaires arrondi shadow">
-                    <div class="apercu">
-                        <img class="cover" src="images/hebergements/4_small/coeur_de_l_eau.jpg"/>
-                    </div>
+                <a href="" class ="case_populaires arrondi shadow">
+                    <img class="cover" src="images/hebergements/4_small/coeur_de_l_eau.jpg"/>
                     <div class="description">
-                    <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                    <p>Nuit à partir de 71€</p>
-                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
+                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                        <p>Nuit à partir de 71€</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
                     </div>
-                </div>
+                </a> 
 
-                <div class ="case_populaires arrondi shadow">
-                    <div class="apercu">
-                        <img class="cover" src="images/hebergements/4_small/hotel_bleu_et_blanc.jpg"/>
-                    </div>
+                <a href="" class ="case_populaires arrondi shadow">
+                    <img class="cover" src="images/hebergements/4_small/hotel_bleu_et_blanc.jpg"/>
                     <div class="description">
-                    <h3>Hôtel Tout bleu et Blanc</h3>
-                    <p>Nuit à partir de 68€</p>
-                    <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
+                        <h3>Hôtel Tout bleu et Blanc</h3>
+                        <p>Nuit à partir de 68€</p>
+                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
                     </div>
-                </div>
+                </a>
 
             </div>
         </div>
@@ -188,81 +184,70 @@
         <h2>Activités à Marseille</h2>
         <!-- flexbox des activité en colonnes-->
         <div id="contenu_activites_marseille">
-            <div class="case_activites grand arrondi">
-                <div class="apercu">
+           <a href="" class="case_activites grand arrondi">
                     <img class="filtre_1" src="images/activites/4_small/vieux_port.jpg"/>
-                </div>
                 <h3>Vieux Port</h3>
-            </div>
+            </a>
 
-            <div class="case_activites moyen arrondi">
+            <a href="" class="case_activites moyen arrondi">
                 <div class="apercu">
                     <img src="images/activites/4_small/fort_pomegues.jpg"/>
                 </div>
                 <h3>Fort de Pomègues</h3>
-            </div>
+            </a>
 
-            <div class="case_activites petit arrondi">
-                <div class="apercu">
-                    <img src="images/activites/4_small/iles_friout.jpg"/>
-                </div>
+            <a href="" class="case_activites petit arrondi">
+                <img src="images/activites/4_small/iles_friout.jpg"/>
                 <h3>Iles du Frioul</h3>
-            </div>
+            </a>
 
-            <div class="case_activites grand arrondi">
-                <div class="apercu">
-                    <img class="filtre_1" src="images/activites/4_small/parc_national_calanques.jpg"/>
-                </div>
+            <a href="" class="case_activites grand arrondi">
+                <img class="filtre_1" src="images/activites/4_small/parc_national_calanques.jpg"/>
                 <h3>Parc National des Calanques</h3>
-            </div>
+            </a>
 
-            <div class="case_activites petit arrondi">
-                <div class="apercu">
+            <a href="" class="case_activites petit arrondi">
                     <img src="images/activites/4_small/notre_dame_garde.jpg"/>
-                </div>
                 <h3>Notre-Dame-de-la-Garde</h3>
-            </div>
+            </a>
 
-            <div class="case_activites moyen arrondi">
-                <div class="apercu">
-                    <img src="images/activites/4_small/parc_longchamp.jpg"/>
-                </div>
+            <a href="" class="case_activites moyen arrondi">
+                <img src="images/activites/4_small/parc_longchamp.jpg"/>
                 <h3>Parc Longchamp</h3>
-            </div>
-
+            </a>
         </div>
-        </section>
-</div>
+    </section>
+
     <!--footer-->
     <footer>
         <div class="container">
     <!--A propos-->
-    <div>
-        <h3>A propos</h3>
-        <ul>
-            <li>Fonctionnement du site</li>
-            <li>Conditions générales de ventes</li>
-            <li>Données et confidentialité</li>
-        </ul>
-    </div>
+            <div>
+                <h3>A propos</h3>
+                <ul>
+                    <li><a href="">Fonctionnement du site</a></li>
+                    <li><a href="">Conditions générales de ventes</a></li>
+                    <li><a href="">Données et confidentialité</a></li>
+                </ul>
+            </div>
     <!--Nos hebergements-->
-    <div>
-        <h3>Nos hébergements</h3>
-        <ul>
-            <li>Charte qualité</li>
-            <li>Soumettre votre hôtel</li>
-        </ul>
-    </div>
+            <div>
+                <h3>Nos hébergements</h3>
+                <ul>
+                    <li><a href="">Charte qualité</a></li>
+                    <li><a href="">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
     <!--Assistance-->
-    <div>
-        <h3>Assistance</h3>
-        <ul>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
-        </ul>
-    </div>
-</div>
+            <div>
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a href="">Centre d'aide</a></li>
+                    <li><a href="">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
-        </body>
+    </body>
 </html>
