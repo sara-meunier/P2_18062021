@@ -12,6 +12,7 @@ body{
 .container{
     max-width:1200px;
     margin:auto;
+    padding: 10px;
  }
  a, a:hover, a:visited {
      text-decoration : none;
@@ -19,6 +20,7 @@ body{
  }
 
  /*----- titres et paragraphes ------*/
+ 
  h2{
      padding: 10px 0px 20px 0px;
      font-size:1.4em;
@@ -39,6 +41,7 @@ header{
     justify-content: space-between;
     padding-top:10px;
     padding-bottom:10px;
+    flex-wrap:wrap;
 }
 #logo{
     width:100px;
@@ -56,6 +59,11 @@ nav{
     flex-direction: row;
     justify-content:center;
 }
+nav div{
+    width:50%;
+    /*border: solid 1px green;*/
+    text-align:center;
+}
 nav p{
     padding:20px;
 }
@@ -66,11 +74,16 @@ nav a {
 nav a:hover {
     display : inline;
     color:#0065FC;
-    padding-top:20px;
-    border-top: solid 2px #0065FC;
+    /*padding-top:20px;
+    border-top: solid 2px #0065FC;*/
 }
 nav a:checked {
     text-decoration:none;
+}
+
+#nav_hebergements:hover , #nav_activites:hover{
+    border-top: solid 2px #0065FC;
+    color:#0065FC;
 }
 
 /*partie inscription*/
@@ -173,6 +186,7 @@ nav a:checked {
 #selection{
     display:flex;
     align-items:center;
+    flex-wrap: wrap;
   }
 .filtre{
     display: flex;
@@ -255,7 +269,7 @@ nav a:checked {
     margin-bottom:30px;
 }
   .description a{
-   color:none;
+   color:black;
    text-decoration:none;
 }
 .description{
@@ -264,10 +278,7 @@ nav a:checked {
 #hebergements a{
     font-weight: bold;
 }
-#hebergements a:hover{
-    font-weight:bold;
-    color:#0065FC;
-}
+
 
 /*partie droite : les plus populaires*/
 #populaires{
@@ -374,4 +385,78 @@ footer li{
 }
 footer a:hover{
     color:#0065FC;
+}
+
+@media all and (max-device-width: 480px)
+{
+    /* Vos règles CSS pour les mobiles ici */
+
+header{
+     padding: 10px;
+}
+#inscription{
+    order:2;
+}
+nav {
+    order: 3;
+    justify-content: space-between;
+    width:100%;
+    border-bottom: solid 2px #e6e6e6;
+}
+#nav_hebergements:hover, #nav_activites:hover {
+    border-bottom: solid 2px #0065FC;
+    border-top: none;
+}
+#nav_hebergements:hover a, #nav_activites:hover a{
+    color:#0065FC;
+}
+h1{
+    padding-top:20px;
+}
+#hebergements_marseille{
+    flex-wrap:wrap;
+}
+
+#selection_filtres{
+    flex-direction: column;
+}
+.filtre {
+    margin-top:10px;
+}
+
+#hebergements, #populaires{
+    width:90%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0px;
+}
+#hebergements{
+    order:2;
+    background-color: white;
+}
+.case_hebergements{
+    width:100%;
+}
+
+.case_activites {
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.grand img, .moyen img, .petit img {
+    height:100px;
+}
+#activites_marseille{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+#contenu_activites_marseille {
+    height:1000px;
+    gap: 10px;
+    margin-left:auto;
+    margin-right:auto;
+  }
 }
