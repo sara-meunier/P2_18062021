@@ -1,0 +1,375 @@
+/*----- valeurs par defaut pour éviter les soucis-----*/
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    max-width:1200px;
+    margin:auto;
+ }
+ a, a:hover, a:visited {
+     text-decoration : none;
+     color:black;
+ }
+
+ /*----- titres et paragraphes ------*/
+ h2{
+     padding: 10px 0px 20px 0px;
+     font-size:1.4em;
+ }
+ h3{
+     font-size:1.05em;
+     padding:5px 0px 5px 0px;
+ }
+ p{
+    padding: 4px 0px 4px 0px;
+ }
+
+/*--------En-tete--------------------*/
+
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#logo{
+    width:100px;
+}
+#div_logo{
+    flex:1;
+}
+header p {
+    padding: 0px;
+}
+
+/*navigation*/
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+nav p{
+    padding:20px;
+}
+nav a {
+    color:black;
+    text-decoration: none;
+}
+nav a:hover {
+    display : inline;
+    color:#0065FC;
+    padding-top:20px;
+    border-top: solid 2px #0065FC;
+}
+nav a:checked {
+    text-decoration:none;
+}
+
+/*partie inscription*/
+#inscription {
+    padding-top:20px;
+    padding-left:20px;
+}
+#inscription a {
+    color:#0065FC;
+    font-weight:bold;
+    text-decoration: none;
+}
+#inscription a:hover {
+    display : inline;
+    color:#0065FC;
+    padding-top:20px;
+    border-top: solid 2px #0065FC;
+}
+
+/*-------font awesome-----------*/
+.fas {
+    color:#0065FC;
+}
+.clair {
+    color :#DEEBFF;
+}
+.noir {
+    color:black;
+}
+
+/*-------class utilisees partout ------*/
+.arrondi {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.shadow{
+    box-shadow: 5px 10px 10px  #ccccce6b, -5px -10px 10px #ccccce6b;
+    }
+.filtre_1{
+    filter: brightness(1.3)contrast(90%);
+    }
+
+/*-------premiere section : recherches -----*/
+
+/*champ de recherche*/
+
+#barre_recherche{
+    display:flex;
+    height:50px;
+    align-items:center;
+}
+#map{
+    display:flex;
+    height:40px;
+    width:40px;
+    background-color: #f2f2f2;
+    border-radius : 15px 0px 0px 15px;
+    justify-content: center;
+    align-items:center;
+}
+.label{
+    display: inline-block;
+    vertical-align:middle;
+    text-align:center;
+    height:40px;
+    width:40px;
+    background-color: #f2f2f2;
+    border-radius : 15px 0px 0px 15px;
+    margin:auto;
+}
+.input{
+    border-right: none;
+    border-top : solid 1px #f2f2f2;
+    border-left : solid 1px #f2f2f2;
+    border-bottom : solid 1px #f2f2f2;
+    height: 40px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+    padding: 0px 0px 0px 10px;
+}
+.button{
+    background-color:#0065FC;
+    color: white;
+    border-radius : 0px 15px 15px 0px;
+    height:40px;
+    width: 130px;
+    font-family: 'Raleway', sans-serif;
+    font-size:1em;
+    border:none;
+    margin:0px;
+    cursor:pointer;
+}
+/* selection des filtres*/
+
+#selection_filtres {
+    display:flex;
+    padding: 25px 0px 25px 0px;
+  }
+#selection{
+    display:flex;
+    align-items:center;
+  }
+.filtre{
+    display: flex;
+    margin: 0px 0px 0px 10px;
+    border: solid 2px #e6e6e6;
+    border-radius:20px;
+}
+.icone{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    background-color: #DEEBFF;
+    border-radius:50%;
+    width:39px;
+    height:39px;
+    box-shadow: 0 0 0 2px #DEEBFF;
+    }
+.categorie{
+    margin: 0px 0px 0px 5px;
+    padding:5px 15px 5px 15px;
+}
+.categorie p{
+    margin:0px;
+    font-weight:bold;
+}
+.filtre:hover {
+    color:#0065FC;
+    background-color: #DEEBFF;
+    cursor:pointer;
+}
+
+/*information*/
+
+#information{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#icone_info{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: white;
+    border-radius:50%;
+    width:20px;
+    height:20px;
+    border: solid 2px #e6e6e6;
+    margin-right:10px;
+}
+
+/*-------deuxieme section : hebergements_marseille-----*/
+#hebergements_marseille{
+    display: flex;
+    justify-content: space-between;
+    flex:2;
+    margin-top:50px;
+}
+#hebergements, #populaires{
+    background-color: #f2f2f2;
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+/*partie gauche : herbergements à marseille*/
+#hebergements {
+    width:68%;
+    padding: 25px 20px 25px 20px;
+}
+ #gallerie_hebergements{
+      display:flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+}
+.case_hebergements{
+    border : solid 5px white;
+    background-color:white;
+    width:31%;
+    margin-bottom:30px;
+}
+  .description a{
+   color:black;
+   text-decoration:none;
+}
+.description{
+    padding:15px;
+}
+#hebergements a{
+    font-weight: bold;
+}
+
+
+/*partie droite : les plus populaires*/
+#populaires{
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    padding: 25px 20px 25px 20px;
+}
+#titre_populaire{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#gallerie_populaires{
+    display: flex;
+    flex-direction : column;
+    justify-content: space-between;
+    align-items:center;
+ }
+.case_populaires{
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border : solid 5px white;
+    background-color:white;
+    margin-bottom:30px;
+}
+
+
+/*--------images de la deuxieme section--------*/
+#gallerie_hebergements img {  
+    height:90px;
+    width:100%;
+}
+#gallerie_populaires img  {
+    height:100%;
+    width:90px;
+}
+.cover{
+    object-fit :cover;
+    object-position:center;
+}
+
+/*--------troisieme section : activites_marseille--------*/
+
+/*gallerie des activités*/
+
+#activites_marseille {
+    height: 500px;
+    margin-top:50px;
+}
+#contenu_activites_marseille{
+    display : flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    justify-content:space-between;
+    gap:2.7%;
+}
+.case_activites{
+    width:23%;
+    box-shadow: 5px 10px 10px #cccccecc;
+}
+
+/*--------images de la troisieme section (activites)--------*/
+
+#contenu_activites_marseille img {  
+    width:100%;
+    object-fit :cover;
+    object-position:center;
+}
+.grand img{
+    height:355px;
+}
+.moyen img {
+    height:170px;
+}
+.petit img {
+    height:120px;
+}
+.grand h3, .petit h3, .moyen h3{
+    padding: 10px 10px 10px 15px;
+}
+
+/*footer*/
+footer {
+    background-color: #f2f2f2;
+}
+footer .container{
+    display:flex;
+    justify-content:space-between;
+    padding:30px;
+}
+footer .container div {
+    width:33%;
+}
+footer ul{
+    list-style:none;
+    padding-left: 0px;
+}
+footer li{
+    padding: 15px 0px 0px 0px;
+}
+footer a:hover{
+    color:#0065FC;
+}
+
