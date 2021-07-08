@@ -10,17 +10,20 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 .container{
-    max-width:1200px;
+    max-width:1300px;
     margin:auto;
     padding: 10px;
  }
- a, a:hover, a:visited {
+ a, a:hover, a:visited, a:checked {
      text-decoration : none;
      color:black;
  }
 
  /*----- titres et paragraphes ------*/
  
+ h1{
+     padding-top: 10px;
+ }
  h2{
      padding: 10px 0px 20px 0px;
      font-size:1.4em;
@@ -30,6 +33,7 @@ body{
      padding:5px 0px 5px 0px;
  }
  p{
+    font-size:0.9em;
     padding: 4px 0px 4px 0px;
  }
 
@@ -59,30 +63,34 @@ nav{
     flex-direction: row;
     justify-content:center;
 }
-nav div{
-    width:50%;
+#nav_hebergements{
+    width:60%;
     /*border: solid 1px green;*/
+    text-align:center;
+}
+#nav_activites{
+    width:40%;
     text-align:center;
 }
 nav p{
     padding:20px;
 }
-nav a {
-    color:black;
-    text-decoration: none;
-}
+
 nav a:hover {
     display : inline;
     color:#0065FC;
-    /*padding-top:20px;
-    border-top: solid 2px #0065FC;*/
+    padding-top:20px;
+    border-top: solid 2px #0065FC;
 }
-nav a:checked {
+/*nav a:checked {
     text-decoration:none;
-}
+}*/
 
 #nav_hebergements:hover , #nav_activites:hover{
     border-top: solid 2px #0065FC;
+    color:#0065FC;
+}
+#nav_hebergements:hover a, #nav_activites:hover a{
     color:#0065FC;
 }
 
@@ -266,6 +274,7 @@ nav a:checked {
     border : solid 5px white;
     background-color:white;
     width:31%;
+    max-height:250px;
     margin-bottom:30px;
 }
   .description a{
@@ -273,7 +282,7 @@ nav a:checked {
    text-decoration:none;
 }
 .description{
-    padding:15px;
+    padding:5px 15px 5px 15px;
 }
 #hebergements a{
     font-weight: bold;
@@ -295,14 +304,12 @@ nav a:checked {
 #gallerie_populaires{
     display: flex;
     flex-direction : column;
-    justify-content: space-between;
     align-items:center;
  }
 .case_populaires{
     width:90%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     border : solid 5px white;
     background-color:white;
     margin-bottom:30px;
@@ -311,7 +318,7 @@ nav a:checked {
 
 /*--------images de la deuxieme section--------*/
 #gallerie_hebergements img {  
-    height:90px;
+    height:50%;
     width:100%;
 }
 #gallerie_populaires img  {
@@ -390,7 +397,61 @@ footer a:hover{
 
 /*----- régles pour les portables --*/
 
-@media all and (max-device-width: 480px)
+@media all and (min-width: 480px) and (max-width: 900px)
+{
+    #selection_filtres{
+        flex-direction: column;
+    }
+    .filtre {
+        margin-top:10px;
+    }
+    
+    /*sections hebergements et populaires*/
+#hebergements_marseille{
+    flex-wrap:wrap;
+}
+#hebergements, #populaires{
+    width:90%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+   padding-top:0px;
+   padding-bottom:0px;
+}
+#hebergements{
+    order:2;
+    background-color: white;
+}
+
+.case_hebergements{
+    width:45%;
+ 
+}
+.case_populaires{
+    width:380px;
+}
+
+#activites_marseille{
+    height:1100px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.case_activites{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+
+
+/*section activités*/
+
+}
+
+@media all and (max-width: 480px)
 {
     /*header*/
 header{
@@ -409,9 +470,7 @@ nav {
     border-bottom: solid 2px #0065FC;
     border-top: none;
 }
-#nav_hebergements:hover a, #nav_activites:hover a{
-    color:#0065FC;
-}
+
 
 /* titres*/
 h1{
@@ -431,7 +490,7 @@ h1{
     flex-wrap:wrap;
 }
 #hebergements, #populaires{
-    width:90%;
+    width:99%;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-left:auto;
@@ -443,30 +502,38 @@ h1{
     order:2;
     background-color: white;
 }
+#gallerie_hebergements{
+    justify-content: center;
+}
 .case_hebergements{
-    width:100%;
+    width:95%;
+    max-height:200px;
 }
 
 /*section activités*/
 .case_activites {
-    width:100%;
+    width:95%;
     margin-left:auto;
     margin-right:auto;
+    height:200px;
+    margin-bottom:30px;
 }
 .grand img, .moyen img, .petit img {
-    height:100px;
+    height:70%;
 }
 #activites_marseille{
-    height:1100px;
     width:90%;
+    height:auto;
     margin-left:auto;
     margin-right:auto;
+    margin-bottom: 20px;
 }
 #contenu_activites_marseille {
-    height:100%;
+    height:auto;
     margin-left:auto;
     margin-right:auto;
     justify-content:flex-start;
+    flex-wrap:nowrap;
 }
 
 /*footer*/
