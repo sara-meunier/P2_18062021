@@ -433,15 +433,24 @@ footer a:hover{
 }
 
 #activites_marseille{
-    height:1100px;
+    height:750px;
     width:90%;
     margin-left:auto;
     margin-right:auto;
 }
+#contenu_activites_marseille{
+    height:650px;
+}
+
 .case_activites{
-    width:50%;
+    width:40%;
     margin-left:auto;
     margin-right:auto;
+    height:200px;
+}
+
+.case_activites img{
+    height:70%;
 }
 
 
