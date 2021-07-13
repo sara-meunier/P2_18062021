@@ -41,7 +41,8 @@
             </div>
             <form method="post" action="traitement.php">
             <p>
-                <label for="recherche_ville"></label> <input class="input" type="search" name="ville" id="recherche_ville" placeholder="Marseille, France" /> <input class="button" type="submit" value="Rechercher"/>
+                <label for="recherche_ville"></label> <input class="input" type="search" name="ville" id="recherche_ville" placeholder="Marseille, France" />
+                <input class="button_desktop" type="submit" value="Rechercher"/> <button class="button_mobile" type="button"><i class="fas fa-search blanc"></i></button>
             </p>
             </form>
          </div>
@@ -137,11 +138,11 @@
                     </div>
                 </a>
             </div>
-            <p><a href="">Afficher plus</a></p>
+            <p><a class="bold" href="">Afficher plus</a></p>
         </div>
 
         <!--colonne de droite - les plus populaires-->
-        <div id="populaires" class="arrondi">
+        <div id="populaires" >
             <div id="titre_populaire">
                 <h2>Les plus populaires</h2>
                 <i class="fas fa-chart-line noir"></i>
@@ -151,27 +152,39 @@
                <a href="" class ="case_populaires arrondi shadow">
                     <img class="cover" src="images/hebergements/4_small/hotel_soleil_matin.jpg" alt=""/>
                     <div class="description">
-                        <h3>Hôtel Le soleil du matin</h3>
-                        <p>Nuit à partir de 128€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                        <div>
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <p>Nuit à partir de 128€</p>
+                        </div>
+                        <p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </p>
                     </div>
                 </a>
 
                 <a href="" class ="case_populaires arrondi shadow">
                     <img class="cover" src="images/hebergements/4_small/coeur_de_l_eau.jpg" alt=""/>
                     <div class="description">
-                        <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                        <p>Nuit à partir de 71€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
+                        <div>
+                            <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                            <p>Nuit à partir de 71€</p>
+                        </div>
+                        <p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i>
+                        </p>
                     </div>
                 </a> 
 
                 <a href="" class ="case_populaires arrondi shadow">
                     <img class="cover" src="images/hebergements/4_small/hotel_bleu_et_blanc.jpg" alt=""/>
                     <div class="description">
-                        <h3>Hôtel Tout bleu et Blanc</h3>
-                        <p>Nuit à partir de 68€</p>
-                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i></p>
+                        <div>
+                            <h3>Hôtel Tout bleu et Blanc</h3>
+                            <p>Nuit à partir de 68€</p>
+                        </div>
+                        <p>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star clair"></i>
+                        </p>
                     </div>
                 </a>
 

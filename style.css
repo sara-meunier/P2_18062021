@@ -12,12 +12,11 @@ body{
 .container{
     max-width:1300px;
     margin:auto;
-    padding: 10px;
- }
+}
  a, a:hover, a:visited, a:checked {
      text-decoration : none;
      color:black;
- }
+}
 
  /*----- titres et paragraphes ------*/
  
@@ -37,14 +36,43 @@ body{
     padding: 4px 0px 4px 0px;
  }
 
+
+/*-------font awesome-----------*/
+.fas {
+    color:#0065FC;
+}
+.clair {
+    color :#DEEBFF;
+}
+.noir {
+    color:black;
+}
+.blanc{
+    color: white;
+}
+
+/*-------class utilisees partout ------*/
+.arrondi {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.shadow{
+    box-shadow: 0 0 15px #cccccecc;
+}
+.filtre_1{
+    filter: brightness(1.3)contrast(90%);
+}
+.bold{
+    font-weight:bold;
+}
+
 /*--------En-tete--------------------*/
 
 header{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding: 20px;
     flex-wrap:wrap;
 }
 #logo{
@@ -61,30 +89,23 @@ header p {
 nav{
     display: flex;
     flex-direction: row;
-    justify-content:center;
 }
 #nav_hebergements{
     width:60%;
-    /*border: solid 1px green;*/
     text-align:center;
+    padding-top: 20px;
+    padding-bottom:20px;
+    border-top: solid 2px #ffffff00;
+
 }
 #nav_activites{
     width:40%;
     text-align:center;
-}
-nav p{
-    padding:20px;
-}
-
-nav a:hover {
-    display : inline;
-    color:#0065FC;
     padding-top:20px;
-    border-top: solid 2px #0065FC;
+    padding-bottom:20px;
+    border-top: solid 2px #ffffff00;
+    margin-left: 30px;
 }
-/*nav a:checked {
-    text-decoration:none;
-}*/
 
 #nav_hebergements:hover , #nav_activites:hover{
     border-top: solid 2px #0065FC;
@@ -97,7 +118,8 @@ nav a:hover {
 /*partie inscription*/
 #inscription {
     padding-top:20px;
-    padding-left:20px;
+    padding-left:30px;
+    border-top: solid 2px #ffffff00;
 }
 #inscription a {
     color:#0065FC;
@@ -111,31 +133,14 @@ nav a:hover {
     border-top: solid 2px #0065FC;
 }
 
-/*-------font awesome-----------*/
-.fas {
-    color:#0065FC;
-}
-.clair {
-    color :#DEEBFF;
-}
-.noir {
-    color:black;
-}
 
-/*-------class utilisees partout ------*/
-.arrondi {
-    border-radius: 20px;
-    overflow: hidden;
-}
-.shadow{
-    box-shadow: 5px 10px 10px  #ccccce6b, -5px -10px 10px #ccccce6b;
-    }
-.filtre_1{
-    filter: brightness(1.3)contrast(90%);
-    }
 
 /*-------premiere section : recherches -----*/
 
+#recherche
+{
+    padding:20px;
+}
 /*champ de recherche*/
 
 #barre_recherche{
@@ -173,7 +178,7 @@ nav a:hover {
     font-weight:bold;
     padding: 0px 0px 0px 10px;
 }
-.button{
+.button_desktop{
     background-color:#0065FC;
     color: white;
     border-radius : 0px 15px 15px 0px;
@@ -185,11 +190,27 @@ nav a:hover {
     margin:0px;
     cursor:pointer;
 }
+.button_mobile{
+    display: none;
+    background-color:#0065FC;
+    color: white;
+    border-radius : 0px 15px 15px 0px;
+    height:40px;
+    width: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size:1em;
+    border:none;
+    margin:0px;
+    cursor:pointer;
+
+}
 /* selection des filtres*/
 
 #selection_filtres {
     display:flex;
+    flex-wrap: wrap;
     padding: 25px 0px 25px 0px;
+    align-items:center;
   }
 #selection{
     display:flex;
@@ -251,7 +272,7 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     flex:2;
-    margin-top:50px;
+    margin-top:20px;
 }
 #hebergements, #populaires{
     background-color: #f2f2f2;
@@ -274,7 +295,7 @@ nav a:hover {
     border : solid 5px white;
     background-color:white;
     width:31%;
-    max-height:250px;
+    max-height:200px;
     margin-bottom:30px;
 }
   .description a{
@@ -283,10 +304,11 @@ nav a:hover {
 }
 .description{
     padding:5px 15px 5px 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
 }
-#hebergements a{
-    font-weight: bold;
-}
+
 
 
 /*partie droite : les plus populaires*/
@@ -295,6 +317,7 @@ nav a:hover {
     flex-direction: column;
     width:30%;
     padding: 25px 20px 25px 20px;
+    border-radius: 20px;
 }
 #titre_populaire{
     display:flex;
@@ -308,12 +331,14 @@ nav a:hover {
  }
 .case_populaires{
     width:90%;
+    height:140px;
     display: flex;
-    flex-direction: row;
     border : solid 5px white;
     background-color:white;
     margin-bottom:30px;
+
 }
+
 
 
 /*--------images de la deuxieme section--------*/
@@ -323,7 +348,8 @@ nav a:hover {
 }
 #gallerie_populaires img  {
     height:100%;
-    width:90px;
+    width:40%;
+    min-width:40%;
 }
 .cover{
     object-fit :cover;
@@ -337,6 +363,7 @@ nav a:hover {
 #activites_marseille {
     height: 500px;
     margin-top:50px;
+    padding:20px;
 }
 #contenu_activites_marseille{
     display : flex;
@@ -374,6 +401,7 @@ nav a:hover {
 /*footer*/
 footer {
     background-color: #f2f2f2;
+    margin-top: 40px;
 }
 footer .container{
     display:flex;
@@ -395,77 +423,64 @@ footer a:hover{
 }
 
 
-/*----- régles pour les portables --*/
+/*----- régles pour les tablettes --*/
 
-@media all and (min-width: 480px) and (max-width: 900px)
+@media all and (min-width: 480px) and (max-width: 1168px)
 {
-    #selection_filtres{
-        flex-direction: column;
-    }
-    .filtre {
+      .filtre {
         margin-top:10px;
     }
-    
-    /*sections hebergements et populaires*/
-#hebergements_marseille{
-    flex-wrap:wrap;
-}
-#hebergements, #populaires{
-    width:90%;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-left:auto;
-    margin-right:auto;
-   padding-top:0px;
-   padding-bottom:0px;
-}
-#hebergements{
+ /*sections hebergements et populaires*/
+    #hebergements_marseille{
+        flex-wrap:wrap;
+    }
+    #hebergements, #populaires{
+        width:100%;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left:auto;
+        margin-right:auto;
+        padding-top:0px;
+        padding-bottom:0px;
+        border-radius:0px;
+    }
+    #hebergements{
     order:2;
     background-color: white;
-}
-
-.case_hebergements{
+    }
+    .case_hebergements{
     width:45%;
- 
-}
-.case_populaires{
-    width:380px;
-}
+     }
+    .case_populaires{
+    min-width:418px;
+    max-width:80%;
+    }
 
-#activites_marseille{
+    #activites_marseille{
     height:750px;
-    width:90%;
+    width:100%;
     margin-left:auto;
     margin-right:auto;
-}
-#contenu_activites_marseille{
+    }
+    #contenu_activites_marseille{
     height:650px;
-}
-
-.case_activites{
+    }
+    .case_activites{
     width:40%;
     margin-left:auto;
     margin-right:auto;
     height:200px;
-}
-
-.case_activites img{
+    }
+    .case_activites img{
     height:70%;
+    }
 }
 
-
-
-
-/*section activités*/
-
-}
-
+/*---- régles pour les portables --*/
 @media all and (max-width: 480px)
 {
     /*header*/
-header{
-     padding: 10px;
-}
+
 #inscription{
     order:2;
 }
@@ -473,39 +488,46 @@ nav {
     order: 3;
     justify-content: space-between;
     width:100%;
+    /*border-bottom: solid 2px #e6e6e6;*/
+}
+
+#nav_hebergements, #nav_activites{
     border-bottom: solid 2px #e6e6e6;
+    border-top: none;
+    margin-left: 0px;
+
 }
 #nav_hebergements:hover, #nav_activites:hover {
     border-bottom: solid 2px #0065FC;
     border-top: none;
 }
-
-
 /* titres*/
 h1{
     padding-top:20px;
 }
 /*section recherche*/
-
-#selection_filtres{
-    flex-direction: column;
+.button_desktop{
+    display: none;
+}
+.button_mobile{
+    display:inline-block;
 }
 .filtre {
     margin-top:10px;
 }
-
 /*sections hebergements et populaires*/
 #hebergements_marseille{
     flex-wrap:wrap;
 }
 #hebergements, #populaires{
-    width:99%;
+    width:100%;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-left:auto;
     margin-right:auto;
-   padding-top:0px;
-   padding-bottom:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+    border-radius:0px;
 }
 #hebergements{
     order:2;
@@ -514,17 +536,17 @@ h1{
 #gallerie_hebergements{
     justify-content: center;
 }
-.case_hebergements{
+.case_hebergements, .case_populaires
+ {
     width:95%;
-    max-height:200px;
+    max-height:180px;
 }
-
 /*section activités*/
 .case_activites {
     width:95%;
     margin-left:auto;
     margin-right:auto;
-    height:200px;
+    height:180px;
     margin-bottom:30px;
 }
 .grand img, .moyen img, .petit img {
@@ -536,6 +558,7 @@ h1{
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 20px;
+    padding:0px;
 }
 #contenu_activites_marseille {
     height:auto;
@@ -544,7 +567,6 @@ h1{
     justify-content:flex-start;
     flex-wrap:nowrap;
 }
-
 /*footer*/
 footer .container{
       flex-direction:column;
