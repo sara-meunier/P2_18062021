@@ -474,7 +474,7 @@ footer a:hover{
 
 
 /*----------- régles pour les portables ------------*/
-@media all and (max-width: 553px)
+@media all and (max-width: 552px)
 {
     /* titres*/
     h1{
